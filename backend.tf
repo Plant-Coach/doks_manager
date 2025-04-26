@@ -4,7 +4,7 @@ terraform {
     organization = "plant-coach" 
 
     workspaces { 
-      name = "doks-manager" 
+      name = "do-k8s" 
     } 
   } 
 }
