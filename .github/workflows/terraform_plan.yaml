@@ -16,4 +16,4 @@ jobs:
       - name: Check
         uses: dflook/terraform-check@v1
         with:
-          path: my-terraform-configuration
+          path: "."
