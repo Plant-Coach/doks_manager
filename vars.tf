@@ -7,6 +7,16 @@ variable "backend_database_user_name" {
   default = "backend_database_user_name"
 }
 
+variable "terraform_cloud_organization" {
+  type = string
+  default = "terraform_cloud_organization"
+}
+
+variable "terraform_cloud_workspace" {
+  type = string
+  default = "terraform_cloud_workspace"
+}
+
 variable "database_name" {
   type    = string
   default = "database_name"
