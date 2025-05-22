@@ -1,10 +1,10 @@
 terraform {
   cloud {
 
-    organization = "plant-coach"
+    organization = var.terraform_cloud_organization
 
     workspaces {
-      name = "do-k8s"
+      name = var.terraform_cloud_workspace
     }
   }
 }
