@@ -1,10 +1,10 @@
-terraform { 
-  cloud { 
-    
-    organization = "plant-coach" 
+terraform {
+  cloud {
 
-    workspaces { 
-      name = "do-k8s" 
-    } 
-  } 
+    organization = "plant-coach"
+
+    workspaces {
+      name = "do-k8s"
+    }
+  }
 }
