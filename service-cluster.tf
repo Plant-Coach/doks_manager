@@ -7,9 +7,9 @@ locals {
     "terraform",
     "terraform-cloud"
   ]
-  k8s_version = "1.32"
+  k8s_version          = "1.32"
   application_timezone = "EST"
-  postgresql_version = "17"
+  postgresql_version   = "17"
 }
 
 resource "digitalocean_project" "plant_coach" {
@@ -35,6 +35,6 @@ resource "digitalocean_kubernetes_cluster" "plant_coach_cluster" {
     name       = "${var.app_name}-worker-pool"
     size       = var.node_pool_size
     node_count = var.node_count
-    tags = local.tags
+    tags       = local.tags
   }
 }

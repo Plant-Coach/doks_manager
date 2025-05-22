@@ -20,7 +20,7 @@ resource "digitalocean_database_cluster" "plant_coach_be_cluster" {
   size       = var.db_cluster_size
   region     = var.digitalocean_database_region
   node_count = var.db_cluster_node_count
-  tags = local.tags
+  tags       = local.tags
 }
 
 resource "digitalocean_database_connection_pool" "pool-01" {
