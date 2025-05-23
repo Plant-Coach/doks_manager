@@ -1,6 +1,24 @@
-# DOKS_MANAGER
+# DOKS MANAGER 
+*(aka, "DigitalOcean Kubernetes Manager")*
 
 ## Project Description
-This project deploys and configures Kubernetes clusters for running an application and a Postgresql database on the cloud hosting platform Digital Ocean.  This originally started of as my IaaC solution, but in the spirit of reusability, this is also working its way towars a Terraform module with with any number of customizations can be made for future applications.
+This Terraform repo deploys and maintains Kubernetes clusters for running an application and a Postgresql database on the cloud hosting platform DigitalOcean.  
 
-As such, module-related notes and documentation are to come after further testing and development of this repo.
+This originally was my IaaC solution for one of my Rails projects, but reusability came to mind so I have continue to migrate it towards a reusable, user-friendly (and well-documented) Terraform Module with which anyone can instantly create their own ready-to-go Kubernetes clusters and databases with minimal effort.
+
+## Requirements
+- Terraform Cloud
+- Digital Ocean Account
+
+## Current Features
+- Creates Kubernetes cluster.
+- Creates Kubernetes Postgresql cluster.
+- Creates firewall permissions.
+- Creates basic database defaults.
+- Completely customizable through variables inherited through the user's own Terraform Cloud workspace variables.
+
+## Future Features
+- [ ] Customized GitHub actions with plan/apply/validation jobs.
+- [ ] More dynamic to allow for limitless whitelisting.
+- [ ] Scaling options
+- [ ] Instructions for future users :)
