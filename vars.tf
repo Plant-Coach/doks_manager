@@ -78,12 +78,22 @@ variable "ip_address_1" {
 
 variable "digitalocean_database_region" {
   type    = string
-  default = "nyc2"
+  default = "nyc1"
 }
 
 variable "digitalocean_region" {
   type    = string
   default = "nyc1"
+}
+
+variable "vpc_name" {
+  type = string
+  default = "my_new_vpc"
+}
+
+variable "vpc_ip_range" {
+  type = string
+  default = "10.10.10.0/20"
 }
 
 # This will require more implementation from a module perspective.

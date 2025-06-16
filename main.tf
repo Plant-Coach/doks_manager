@@ -11,6 +11,7 @@ locals {
   postgresql_version   = "17"
 }
 
+# https://registry.terraform.io/providers/digitalocean/digitalocean/latest/docs/resources/kubernetes_cluster
 resource "digitalocean_kubernetes_cluster" "plant_coach_cluster" {
   name   = var.app_name
   region = var.digitalocean_region
@@ -25,4 +26,5 @@ resource "digitalocean_kubernetes_cluster" "plant_coach_cluster" {
     node_count = var.node_count
     tags       = local.tags
   }
+  vpc_uuid = digitalocean_vpc.plant_coach_vpc.id
 }

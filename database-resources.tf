@@ -8,6 +8,7 @@ resource "digitalocean_database_user" "plant-coach-db-user" {
   name       = var.backend_database_user_name
 }
 
+# https://registry.terraform.io/providers/digitalocean/digitalocean/latest/docs/resources/database_cluster
 resource "digitalocean_database_cluster" "plant_coach_be_cluster" {
   name       = var.database_cluster_name
   engine     = "pg"
@@ -16,6 +17,7 @@ resource "digitalocean_database_cluster" "plant_coach_be_cluster" {
   region     = var.digitalocean_database_region
   node_count = var.db_cluster_node_count
   tags       = local.tags
+  private_network_uuid = digitalocean_vpc.plant_coach_vpc.id
 }
 
 resource "digitalocean_database_connection_pool" "pool-01" {
