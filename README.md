@@ -22,3 +22,8 @@ This originally was my IaaC solution for one of my Rails projects, but reusabili
 - [ ] More dynamic to allow for limitless whitelisting.
 - [ ] Scaling options
 - [ ] Instructions for future users :)
+
+
+DOCTL Setup
+[Digital Ocean DOCTL docs](https://docs.digitalocean.com/reference/doctl/how-to/install/)
+`brew install doctl`
