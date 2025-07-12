@@ -2,7 +2,7 @@
 *(aka, "DigitalOcean Kubernetes Manager")*
 
 ## Project Description
-This Terraform repo deploys and maintains Kubernetes clusters for running an application and a Postgresql database on the cloud hosting platform DigitalOcean.  
+This (demo) Terraform repo deploys and maintains Kubernetes clusters for running an application and a Postgresql database on the cloud hosting platform DigitalOcean.  
 
 This originally was my IaaC solution for one of my Rails projects, but reusability came to mind so I have continue to migrate it towards a reusable, user-friendly (and well-documented) Terraform Module with which anyone can instantly create their own ready-to-go Kubernetes clusters and databases with minimal effort.
 
