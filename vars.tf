@@ -8,12 +8,12 @@ variable "backend_database_user_name" {
 }
 
 variable "terraform_cloud_organization" {
-  type = string
+  type    = string
   default = "terraform_cloud_organization"
 }
 
 variable "terraform_cloud_workspace" {
-  type = string
+  type    = string
   default = "terraform_cloud_workspace"
 }
 
